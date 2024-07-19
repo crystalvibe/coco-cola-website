@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: #fff;
+}
+html,body{
+    height: 440px;
+    width:  100%;
+    font:18px 'Gilroy', sans-serif;
+    background-color: black;
+}
+#main {
+height:200%;
+width: 100%;
+background-color:black;
+}
+#nav
+{
+    height:140px;
+    width :100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: centre;
+    padding:0 50px;
+    justify-content: space-between;
+
+}
+#nav-part2{
+    display:flex;
+    /* background-color: blue; */
+    width: 65%;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+#nav h1{
+    font-size: 20px;
+    text-transform: capitalize;
+    display:flex;
+    align-items: center;
+}
+#nav i{
+    font-size: 20px;
+    margin-right: 5px;
+    
+}
+#nav h5{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#img
+{
+   align-items: center;
+    height:50px;
+}
+#line 
+{
+    width: 70px;
+    height: 2px;
+    background-color: red;
+}
+#content{
+    height:calc(100% - 140px);
+    width:100%;
+   /* background-color:lightblue; */
+    display: flex;
+    justify-content: space-between;
+}
+#heart{
+        padding-left: 65%;
+        position:relative;
+        top: -8%; 
+        color: red;
+        border: #000;
+}
+#left{
+    width:36%;
+    height:100%;
+   /* background-color:red ;*/
+    padding: 160px 100px;
+    padding-top: 60px;
+    
+    
+}
+#right{
+    width:36%;
+    height:100%;
+    /*background-color:red ;*/
+    padding:340px 140px;
+    transform: translateY(-10%);
+
+}
+#centre{
+    width:26%;
+    height:100%;
+   /* background-color:red ;*/
+   
+}
+#left h1{
+    font-size: 75px;
+    line-height:70px ;
+    font-weight: 700;
+     margin-bottom: 50px;
+    
+}
+#left h1 span{
+      color: red;
+      font-weight: 500;
+}
+#left p{
+margin-bottom: 50px;
+font-size: 18px;
+width:70%;
+line-height: 24px;
+}
+#left button{
+    background-color: red;
+    padding:20px 42px;
+    border-radius: 50px;
+    font-size: 18px;
+    display:flex;
+    align-items: center;
+    font-weight: 700;
+
+}
+#left button i{
+    margin-right:10px;
+}
+#centre-bg img{
+    /* background-color: blue; */
+    /* background-image: url(https://c0.wallpaperflare.com/preview/85/135/782/coca-cola-led-signage-thumbnail.jpg);  */
+    width:100%;
+    height: 700px;
+border-top-left-radius: 1000px;
+border-top-left-radius: 1000px;
+border-top-right-radius: 1000px;
+transform:translateX(13%);
+/* image-resolution: 450%;*/
+filter: blur(3px);
+}
+#content >img {
+    height:100%;
+    position:absolute;
+    left:49%;
+    z-index:99;
+    transform:translate(-50%,0);
+    padding-left: 7%;
+}
+#right-elems{
+    /*background-color: red;*/
+    width: 350px;
+}
+#elem1{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    /*background-color: blue;*/
+    opacity:0.6;
+    border-bottom: 1px solid white;
+}
+#elem1 h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+#elem1 i{
+    font-size: 24px;
+}
+#elem2 h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom:15px;
+    padding-top:15px;
+}
+#elem2 p{
+    font-size:12px;
+    width:80%;
+    opacity:0.6;
+}
+
+#nav ul.dropdown li {
+    display: block;
+    background: #000;
+    margin: 1px 0px;
+    }
+#nav ul.dropdown{
+width:auto;
+background:#000;
+position: absolute;
+z-index: 999;
+display: none;
+}
+ #nav ul:hover ul.dropdown {
+    display: block;
+    color:red;
+  }
+  #list{
+   transform: translateX(-40%);
+  }
+/* Styles for store cards */
+.store-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.store-card {
+    background-color:transparent;
+    border: 1px solid red;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(196, 44, 44, 0.714);
+    width: calc(50% - 10px); /* Two cards per row */
+    margin-bottom: 20px;
+}
+
+.store-info {
+    display: flex;
+    align-items: center;
+}
+
+.store-info img {
+    width: 40%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    object-fit: cover;
+}
+
+.store-details {
+    padding: 10px;
+    width: 60%;
+}
+
+.store-details h3 {
+    padding-left: 10%;
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.store-details p {
+    padding-left: 10%;
+    font-size: 0.8em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Styles for map button */
+.map-button {
+    background-color: red;
+    color: #fff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 10%;
+}
+
+.map-button:hover {
+    background-color: #b30000;
+}
+.store-card img{
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+#hui{
+    padding-left: 29%;
+    /* padding-bottom: 2%; */
+}
+#hui span{
+    color:red;
+    font-weight:400;
+}
+footer {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+  
+  }
+  
+  .trademark {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+  }
+#currentYear{
+color:red;
+}
